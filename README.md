@@ -29,3 +29,11 @@ I wanted the Player to not float above the platform but look like it is gliding 
 I would add the code which would allow me to keep track of the Coins collected.
 
 After moving the Player down, I tried to add colour to the scene objects. However, I could not and I believe it is due to me not having certain downloadable content installed which would allow me to change the colour of the objects. This is disapointing as leaving the default Materials on makes the final piece look boring with little effort put into it. 
+
+# 15/01/2025
+I have finished my first tutorial finally. I have been having issues with motivation and my mental health hence why it has taken so long to get this all done. I have a couple of days to get 3 more done and the prototype...
+
+One thing I noticed was explaining how the tutorial is supposed to go to someone who has no idea how to programe has helped me understand what the programming terms mean within Visual Studio somewhat which was very suprising. 
+
+Moving forward, I will be making the other tutorials on the same Unity save and will be adding them all up into one final Unity scene which will the function as my Prototype which I think would be cool and somewhat and creative way to do this module than disconnected tutorials and a Ptorotype I think. I hope it will get accepted though otherise I do not know what I would do...
+
