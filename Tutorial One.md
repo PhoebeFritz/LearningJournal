@@ -184,4 +184,6 @@ This is it for the Pickup script. It should look something like this. Remember, 
 
 All that needs to be done is assign it to the Coins in the scene via the same method shown when assigning the script to the Player. Once that is done, the scene should now work. 
 Here is the final video of it working below.
+
 https://youtu.be/1l-8WurIW4A
+
