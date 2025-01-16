@@ -52,21 +52,23 @@ You will be greeted with a blank Unity template within Visual Studio, the progra
 
 To start, the public class needs to be correct and should say “public class Movement : MonoBehavior.” Next, we will write some private and public statements to make the script work later.
 
-![image](https://github.com/user-attachments/assets/5920dc6d-bbf7-4c33-9f0d-bd6f67d9f557)
+![image](https://github.com/user-attachments/assets/5a3aa000-3497-4f61-aa09-2a97584db21b)
 
-The difference between private and public classes is whether they can be seen and accessed/edited in Unity or if they can only be seen and edited in the script itself. For example, playerSpeed and jumpHeight are all public but gravityValue is not. 
-When looking in Unity at the script component on the Player, we can see the first two which can be edited in the software, but not the gravityValue. If you were to change the private to public for gravityValue, then it can be seen and edited in the Unity Engine. 
+The difference between private and public classes is whether they can be seen and accessed/edited in Unity or if they can only be seen and edited in the script itself. For example, speed and jump are all public but gravity is not. 
+When looking in Unity at the script component on the Player, we can see the first two which can be edited in the software, but not the gravity. If you were to change the private to public for gravity, then it can be seen and edited in the Unity Engine. 
 
 ![image](https://github.com/user-attachments/assets/e5aaa410-ef79-40b5-b37f-beffdafae819)
 ![image](https://github.com/user-attachments/assets/074493be-4f3b-4787-ba53-12a8ca0a93d3)
 
 The meaning of “float” is to represent numbers what have decimal points in them such as 3.2, 5.8 and 45.2 as random examples. This allows us to set the values of the three commands to any number, not just whole numbers but decimal numbers too for more precise variations. 
-playerSpeed is how fast the Player can move in the scene.
+speed is how fast the Player can move in the scene.
 jumpHieght is how high the Player is allowed to go when jumping.
-gravityValue affects the Player movement in the air when ascending in a jump but also descending to finish a jump. This can be set to make it feel like the Player is jumping on the moon if desired.   
+gravity affects the Player movement in the air when ascending in a jump but also descending to finish a jump. This can be set to make it feel like the Player is jumping on the moon if desired.   
 All the numbers below are ending in a lowercase “f” which signifies “float” and tells the logic of the program that the number is linked to the “float” in the same line in the script. 
 
-![image](https://github.com/user-attachments/assets/14b866d5-7e83-4ea7-a071-27c5bcfaaa59)
+![image](https://github.com/user-attachments/assets/35b6ca04-73f2-470d-856d-1a01ef639426)
+
+
 
 Just before these three lines are another three private lines. 
 
@@ -74,7 +76,7 @@ The term “CharacterController” is what tells the program that the Player can
 “Vector3” has been used before in the other tutorials and represents the 3-dimentional template and scene we are using. 3 as in the X, Y and Z axis. 
 The term “bool” stands for Boolean which is a binary value of either true or false.
 
-![image](https://github.com/user-attachments/assets/30a88fb7-f477-4aca-abaa-67a98c0a899a)
+![image](https://github.com/user-attachments/assets/016616e6-05c4-4425-8cbd-e026e9b30ef3)
 
 Under “private void Start()” we will be adding the following text seen in the screen shot below. This tells the program to instantly allow for the inputs of the keyboard to move the character via the Character Controller component on the Player object in Unity. 
 GetComponent is the command that searched and finds the component added to the object with the component in question being “CharacterController” which we have added in the “Setting the Stage” part of this tutorial. 
@@ -82,9 +84,9 @@ GetComponent is the command that searched and finds the component added to the o
 ![image](https://github.com/user-attachments/assets/b20bd301-565f-44b0-83f0-420510790f81)
 
 Under “private void Update()” we will be adding an “if” statement as seen below. What this statement does is check if the Player is grounded which is defined as not moving on the Y axis – the axis that would move the player vertically. 
-If the player is not moving on the Y axis (represented by playerVelocity.y < 0) and there is no input in the “controller” for the Player to be recognized as not moving on the Y Axis (making it considered groundedPlayer) then there will be no movement on that axis as represented by the “= 0f;”
+If the player is not moving on the Y axis (represented by velocity.y < 0) and there is no input in the “controller” for the Player to be recognized as not moving on the Y Axis (making it considered grounded) then there will be no movement on that axis as represented by the “= 0f;”
 
-![image](https://github.com/user-attachments/assets/88621e55-56ad-457c-b9c1-0623bee135e7)
+![image](https://github.com/user-attachments/assets/9f7c03d3-3c6f-4a14-a38f-e1efac653147)
 
 Next, we will be coding more of the movement by using a couple of “float” statements followed by “forwardMovement” and “sideMovement” which are terms which will be redefined later in the script. In short, they affect the direction of movement. 
 “Input” refers to the means of interaction with the game based on the specified input commands programmed. If the Spacebar opens the box, the Spacebar is the input which affects the game. 
@@ -94,25 +96,25 @@ The last line is also defined later in the script, but all it says in the comman
 ![image](https://github.com/user-attachments/assets/892ef9af-f08e-482b-86a4-ce3fc7290a5b)
 
 The following “if” statement is what controls the jumping in the game. 
-The first line suggests that if the Player is in the “groundedPlayer” state, which means it is not moving on the Y axis and there is an input of the Spacebar, then the Player will jump in the game. 
+The first line suggests that if the Player is in the “grounded” state, which means it is not moving on the Y axis and there is an input of the Spacebar, then the Player will jump in the game. 
 The “&&” is a logic and operator command which means it will search the program and script with a sense of logic which can be interpreted in the “if” statement under “private void Update()” in regards to if the player is considered “playerGrounded”, then it will allow for the next component in the current “if” statement to work. 
 The next component here would be the recognition of an “Input” of a key which has been set to the Spacebar. Together this will allow for movement on the Y Axis. 
-However, this movement is determined by the following line. This line does some mathematics and therefore makes everything thus far even more confusing. But in short, the “playerVelocity” which is movement in 3-dimentions, specified on the Y Axis with the “.y” at the end, is based on the “jumpHeight” and “gravityValue” along with the middle value.  
+However, this movement is determined by the following line. This line does some mathematics and therefore makes everything thus far even more confusing. But in short, the “velocity” which is movement in 3-dimentions, specified on the Y Axis with the “.y” at the end, is based on the “jump” and “gravity” along with the middle value.  
 
-![image](https://github.com/user-attachments/assets/6a5a29e1-a3f0-41af-ab7e-16ad8acc861a)
+![image](https://github.com/user-attachments/assets/2843cf23-c5b9-495d-86b3-f504db4e50ac)
 
-The next few lines also look confusing, and I think it still is. The value of “gravityValue” and the Time which would often be defined by the frame rate would be added and applied to “playerVelocity.y” which means based on the passing of time, based on the frame rate and the “gravityValue,” which I the movement of the Y Axis is put to gather to determine the speed and movement of the Player when moving on the Y Axis. 
-This would be calculated and applied when the “controller” input is activated which is done when affecting the “Move” function. This is done via the “CharacterController” component. This movement is now decided on “playerVelocity” in relation to “Time.”
+The next few lines also look confusing, and I think it still is. The value of “gravity” and the Time which would often be defined by the frame rate would be added and applied to “velocity.y” which means based on the passing of time, based on the frame rate and the “gravity,” which I the movement of the Y Axis is put to gather to determine the speed and movement of the Player when moving on the Y Axis. 
+This would be calculated and applied when the “controller” input is activated which is done when affecting the “Move” function. This is done via the “CharacterController” component. This movement is now decided on “velocity” in relation to “Time.”
 
-![image](https://github.com/user-attachments/assets/1fa06b23-c6b4-41c8-8cb9-aeb6d4ff5039)
+![image](https://github.com/user-attachments/assets/4e107eea-2038-4c7f-b44a-e8e59e9e5b87)
 
 This is the whole command for the jumping mechanic in the game. 
 
-![image](https://github.com/user-attachments/assets/2f83dac6-8f7c-4a0a-bf89-aa5d66632c14)
+![image](https://github.com/user-attachments/assets/2651fd01-790a-40a2-9d25-a06e72f66450)
 
 The final section of the script refers to a section in the middle, before we wrote the jumping function. This section is what defines the command of “Move” in relation to the “GetAxis” commands. 
 
-![image](https://github.com/user-attachments/assets/47cfdcea-ba31-4d7e-aab5-c59c0d8e0247)
+![image](https://github.com/user-attachments/assets/91b128be-3b26-491d-854e-27781aee6183)
 
 To start, “private void Move(float forwardMovement, float sideMovement) is hidden from being able to be seen in the Unity Engine and is what the following lines of code refers to. It refers to the third line of code seen below which was in the middle of the script overall. 
 
@@ -121,10 +123,10 @@ To start, “private void Move(float forwardMovement, float sideMovement) is hid
 To simplify these 4 lines of code, all it is doing is redefining the terminology seen in the lines of code in the screen shot above to eventually be represented in one command – “Move.”
 What it is doing is changing the terms “forwardMovement” and sideMovement” to be known as “moveForward” and “moveSide” respectfully. 
 Then both new terms are simplified into a single term, “totalMovement.”
-Finally, “totalMovement” is simplified and defined based on the “playerSpeed” as the command of “Move.” 
+Finally, “totalMovement” is simplified and defined based on the “speed” as the command of “Move.” 
 “Move” not only affects the movement on the axis’ but also takes into consideration of the speed of the Players movement. 
 
-![image](https://github.com/user-attachments/assets/a0db6b81-1ab8-4c46-aa7c-1b738b5b6ac1)
+![image](https://github.com/user-attachments/assets/5f178f73-d69e-4852-b762-9f3522cdfc57)
 
 This is shown in the final line of the script seen below. The “controller” affects the “Move” function, which allows the Player to move on all three Axis’ within the game based on the passage of time within the program which normally is based on the frame rate. 
 
@@ -132,7 +134,7 @@ This is shown in the final line of the script seen below. The “controller” a
 
 The final script should look like this as seen below.
 
-![image](https://github.com/user-attachments/assets/177bd21b-05c8-40d3-b6b5-6cc9186aed42)
+![image](https://github.com/user-attachments/assets/f1135a75-8e2a-4e0a-8426-a56b99e04c9a)
 
 Moving on, we will save the script and apply it to the Player object in the scene which was made at the beginning of this tutorial as we were setting the stage.
 Simply drag and drop it in the inspector menu and enter the Game mode and test if the cube starts to move AND bounce around. If not, you may want to reevaluate your script. Make sure all opened brackets have a closed counterpart. Make sure you have placed all appropriate semicolons and maybe tweak the variables as you may have them too low. 
