@@ -104,11 +104,11 @@ However, this movement is determined by the following line. This line does some 
 The next few lines also look confusing, and I think it still is. The value of “gravity” and the Time which would often be defined by the frame rate would be added and applied to “velocity.y” which means based on the passing of time, based on the frame rate and the “gravity,” which I the movement of the Y Axis is put to gather to determine the speed and movement of the Player when moving on the Y Axis. 
 This would be calculated and applied when the “controller” input is activated which is done when affecting the “Move” function. This is done via the “CharacterController” component. This movement is now decided on “velocity” in relation to “Time.”
 
-![image](https://github.com/user-attachments/assets/4e107eea-2038-4c7f-b44a-e8e59e9e5b87)
+![image](https://github.com/user-attachments/assets/3bea09b8-f46c-49e8-996b-c62f3944997e)
 
 This is the whole command for the jumping mechanic in the game. 
 
-![image](https://github.com/user-attachments/assets/2651fd01-790a-40a2-9d25-a06e72f66450)
+![image](https://github.com/user-attachments/assets/3c235b34-4861-4825-b8cf-c23921e41830)
 
 The final section of the script refers to a section in the middle, before we wrote the jumping function. This section is what defines the command of “Move” in relation to the “GetAxis” commands. 
 
