@@ -112,7 +112,7 @@ This is the whole command for the jumping mechanic in the game.
 
 The final section of the script refers to a section in the middle, before we wrote the jumping function. This section is what defines the command of “Move” in relation to the “GetAxis” commands. 
 
-![image](https://github.com/user-attachments/assets/91b128be-3b26-491d-854e-27781aee6183)
+![image](https://github.com/user-attachments/assets/49028276-2a52-436d-b8a1-9f2444133db6)
 
 To start, “private void Move(float forwardMovement, float sideMovement) is hidden from being able to be seen in the Unity Engine and is what the following lines of code refers to. It refers to the third line of code seen below which was in the middle of the script overall. 
 
@@ -124,7 +124,7 @@ Then both new terms are simplified into a single term, “totalMovement.”
 Finally, “totalMovement” is simplified and defined based on the “speed” as the command of “Move.” 
 “Move” not only affects the movement on the axis’ but also takes into consideration of the speed of the Players movement. 
 
-![image](https://github.com/user-attachments/assets/5f178f73-d69e-4852-b762-9f3522cdfc57)
+![image](https://github.com/user-attachments/assets/1fa49f26-69dd-49d5-a31d-a1f5c84ee351)
 
 This is shown in the final line of the script seen below. The “controller” affects the “Move” function, which allows the Player to move on all three Axis’ within the game based on the passage of time within the program which normally is based on the frame rate. 
 
@@ -132,7 +132,7 @@ This is shown in the final line of the script seen below. The “controller” a
 
 The final script should look like this as seen below.
 
-![image](https://github.com/user-attachments/assets/f1135a75-8e2a-4e0a-8426-a56b99e04c9a)
+![image](https://github.com/user-attachments/assets/3aca76c1-75cf-4418-823f-222ad10095e0)
 
 Moving on, we will save the script and apply it to the Player object in the scene which was made at the beginning of this tutorial as we were setting the stage.
 Simply drag and drop it in the inspector menu and enter the Game mode and test if the cube starts to move AND bounce around. If not, you may want to reevaluate your script. Make sure all opened brackets have a closed counterpart. Make sure you have placed all appropriate semicolons and maybe tweak the variables as you may have them too low. 
