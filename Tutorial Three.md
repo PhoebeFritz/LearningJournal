@@ -99,7 +99,7 @@ The “&&” is a logic and operator command which means it will search the prog
 The next component here would be the recognition of an “Input” of a key which has been set to the Spacebar. Together this will allow for movement on the Y Axis. 
 However, this movement is determined by the following line. This line does some mathematics and therefore makes everything thus far even more confusing. But in short, the “velocity” which is movement in 3-dimentions, specified on the Y Axis with the “.y” at the end, is based on the “jump” and “gravity” along with the middle value.  
 
-![image](https://github.com/user-attachments/assets/2843cf23-c5b9-495d-86b3-f504db4e50ac)
+![image](https://github.com/user-attachments/assets/03255ea8-aec0-4f51-84ce-f2f96f6c4699)
 
 The next few lines also look confusing, and I think it still is. The value of “gravity” and the Time which would often be defined by the frame rate would be added and applied to “velocity.y” which means based on the passing of time, based on the frame rate and the “gravity,” which I the movement of the Y Axis is put to gather to determine the speed and movement of the Player when moving on the Y Axis. 
 This would be calculated and applied when the “controller” input is activated which is done when affecting the “Move” function. This is done via the “CharacterController” component. This movement is now decided on “velocity” in relation to “Time.”
