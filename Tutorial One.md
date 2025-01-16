@@ -11,7 +11,7 @@ In order to follow this tutorial, the following must be available to use.
 
 For this tutorial, I will be using Unity version 2022.3.46f1 which is the standard used version at the University I am studying at as well as the 2022 version of Microsoft Visual Studio Community.
 A basic understanding of how to use these software’s is also needed such as how to create a new project, how to create new scripts as well as adding objects into the project. 
-# The Objective
+## The Objective
 The main objective for this tutorial is teach how to create code to create items in a game setting that can be interacted with and picked-up such as coins and other collectables seen in games. 
 This would be an object floating off the ground spinning that would disappear when ran into. This is seen in countless games such as the many Super Mario games with collectable coins and The legend of Zelda series with the Rupees.
 
