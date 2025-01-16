@@ -68,8 +68,6 @@ All the numbers below are ending in a lowercase “f” which signifies “float
 
 ![image](https://github.com/user-attachments/assets/35b6ca04-73f2-470d-856d-1a01ef639426)
 
-
-
 Just before these three lines are another three private lines. 
 
 The term “CharacterController” is what tells the program that the Player can move around using key commands on a keyboard which is a better way to implement movement than using “Force” and “ForceMode” as seen in my first tutorial. 
@@ -86,7 +84,7 @@ GetComponent is the command that searched and finds the component added to the o
 Under “private void Update()” we will be adding an “if” statement as seen below. What this statement does is check if the Player is grounded which is defined as not moving on the Y axis – the axis that would move the player vertically. 
 If the player is not moving on the Y axis (represented by velocity.y < 0) and there is no input in the “controller” for the Player to be recognized as not moving on the Y Axis (making it considered grounded) then there will be no movement on that axis as represented by the “= 0f;”
 
-![image](https://github.com/user-attachments/assets/9f7c03d3-3c6f-4a14-a38f-e1efac653147)
+![image](https://github.com/user-attachments/assets/6dd5e810-573c-4fc2-8a6b-fb60d5b99220)
 
 Next, we will be coding more of the movement by using a couple of “float” statements followed by “forwardMovement” and “sideMovement” which are terms which will be redefined later in the script. In short, they affect the direction of movement. 
 “Input” refers to the means of interaction with the game based on the specified input commands programmed. If the Spacebar opens the box, the Spacebar is the input which affects the game. 
