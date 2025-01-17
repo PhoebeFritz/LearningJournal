@@ -89,6 +89,8 @@ The number to the side of the scenes could be used alternatively to the name of 
 Next, we will go onto the “Button” in the Hierarchy menu under “Canvas” and look in the Inspector menu to the left. There should be a section that reads “On Click” where we will select the “+” at the bottom of it. 
 We will add the “Main Camera” in the drop-down section on the bottom row and “PlayMenu.PlayGame” at the top. 
 
+![image](https://github.com/user-attachments/assets/8a50b959-01de-4748-8d4a-eba121a834b4)
+
 ![image](https://github.com/user-attachments/assets/9c096984-1b86-48d1-a287-440e319e25c0)
 
 With this done, the program should now work. Go into the game mode when in the first scene with the button on and see if it works. If not, you must have gone wrong somewhere along the way. 
