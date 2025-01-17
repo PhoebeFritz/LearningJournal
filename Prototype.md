@@ -9,6 +9,8 @@ https://youtu.be/fPaH8cG34W4
 
 [1.1 Final Prototype Source Files (2).zip](https://github.com/user-attachments/files/18451045/1.1.Final.Prototype.Source.Files.2.zip)
 
+To access the final Prototype with all the source files, please download this link and then unzip the folder. From here, go onto Unity Hub and where you can make a new project, select add and select "Add project from disk." This should be the proper way to open the Protoype on your end. 
+
 # Write-Up
 The VLE does not mention anything regarding talking about the making of the Prototype, but to keep all grounds covers, I will be writing about it just in case. I will be writing it not like the prior tutorials, explaining to someone how to do something but rather as evidential documentation to show the process of making it. 
 
