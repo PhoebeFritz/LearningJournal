@@ -97,3 +97,15 @@ Lastly, I implemented the Play Button mechanic I had created which turned out to
 The issue I had here was once I selected the Main Camera in the Object menu under Runtime, I needed to select the No Function bx and go down the menu and open Play Menu, then Play Game () which I completely forgot I needed to do from when I made this tutorial last time.
 
 The most fun part of the Prototype was making the platform with the 3D Objects. For some reason this was calming for me, but I also enjoyed taking my time and seeing what I could create in terms of a simple platform level. Surprisingly, I enjoyed this module a lot which was not something I would have thought would be the case. Seeing some confusing script turn into something functional was exciting for me and something I felt invested in when making it. Playing the final Prototype was really fun and I went through it a few times as I enjoyed it so much :)
+
+Finally, after screen recoding using the SNippet Tool and uploading the video to YouTube, I can start putting everthing together and upload. The main issue here was understanding how to upload the needed source files without it being too large to upload on GitHub.
+
+The soluiton was that I needed to delete some temporary files in the project folder and leave three - the Assets, Packages and ProjectSettings files. I then needed to zip the whole project and then upload that. One of the deleted files was the Library which contained over 1500 files which added the the project size overall and was the main issue. 
+
+However, I am new to programming and honeslty, do not know much about files and exporting/importing and things like that, so needing to zip and unzip folders when using Maya and now Unity is not only new to me but very confusing. 
+
+I realised that the zipped file that I have I have linked in the Prototype section needs top be downloaded, unzipped and from there, you ned to open Unity Hub, and next to the blue button that says "Create Project" there is a button that says "Add." Selecting that allows you to open a project from the disk which is where you import other projects saved on your computer. Open the scene from the now unzipped projects folder and it works. The Library folder, along with the others that got deleted were created again. Not just that, but the logic carried over which did not when I tried to open when it was still zipped. 
+
+With this now sorted, I can hand in with a lot of anxiety but I vauge sense of relief that this module is done before the deadline. 
+
+## Good Bye :)
