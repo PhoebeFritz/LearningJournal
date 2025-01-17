@@ -1,5 +1,5 @@
-# Tutorial on Creating a Main Menu
-In this tutorial we will be looking at how to create a main menu where you have a button to start the game and load the first scene.
+# Tutorial on Creating a Play Button
+In this tutorial we will be looking at how to create a play button where you have a button to start the game and load the first scene.
 
 ## Prerequisites 
 To follow this tutorial, we will be using the following.
