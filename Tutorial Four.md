@@ -73,6 +73,6 @@ When you assign it, you need to set the Target which can be done by selecting th
 Make sure to set the Speed and Smooth Time to what was set in the script in Visual Studio as if they are not the same then the change in Unity will not take effect. 
 As for the Offset, you are going to want to play around with this to make sure the camera is framing the Player in the way you want or need it to. Make sure to enter Game mode to see if it is correct as if you set the co-ordinates wrong the camera will move in Game mode from the starting position to meet the Offset position. 
 An example of this would be if the camera is set in the positive axis, but for some reason the Offset is set in the negative or vice versa. 
-Once this is done go into Game mode and see if the script works. If so, congratulations you have a camera that follows the Player as the move around in a 3-dimentional space!
+Once this is done go into Game mode and see if the script works. If so, congratulations you have a camera that follows the Player as they move around in a 3-dimentional space!
 
 https://youtu.be/92QV5Teq3PE
