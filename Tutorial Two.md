@@ -85,6 +85,7 @@ Next, go into file and down to “Build Settings” and you should see a menu op
 ![image](https://github.com/user-attachments/assets/489d2111-1824-4e5e-9fad-abd8afa8e9e0)
 
 The number to the side of the scenes could be used alternatively to the name of them in the script. Where it says ““SceneManager.LoadSceneAsync("Game");”, you can change the word “Game” to be the number 1 which is a short cut to “Scenes/Game” as seen in the “Build Settings” above. We will keep it as “Game” for now regardless, but the option is there for simplicity’s sake.
+
 Next, we will go onto the “Button” in the Hierarchy menu under “Canvas” and look in the Inspector menu to the left. There should be a section that reads “On Click” where we will select the “+” at the bottom of it. 
 We will add the “Main Camera” in the drop-down section on the bottom row and “PlayMenu.PlayGame” at the top. 
 
