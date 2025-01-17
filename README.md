@@ -47,7 +47,7 @@ I had issue using the Build Settings initially as I got confused how to add a se
 
 Adding the button script to the camera was also something I did not think I needed to do, but I after making this tutorial, I know the On Cliuck menu needed the Main Camera added to it for the button to activate when click on by the mouse. This took me a while to figure out as the button wopuld not work. The solution was to select the + button underneath the sub menu to add what I needed. 
 
-#16/01/2025
+# 16/01/2025
 The third tutorial was the hardest, however looking at my first totrial, I started by using the "Force" and "ForceMode" commands which allowed the assigned Cube named Player to move in one direction when the Spacebar was held continuously. I copied this several times and changed the direction of the movement linked to different arrow keys. While this worked in movinf the cube, the issue was they cube kepy moving after the key had been pressed as it would slowely slowdown. In other words it was mivinf like it was on ice. 
 
 The solution to this had me searching up differnt tihngs I could do differently which included the "ForceMode" commands and changing it to copmmands such as "forwardMovement" and "sideMovement" which I would Google how to simplify into a single command to execute. This was really confusing and took me a while to do. This method also taught me about the Character Controller component which I could use the prior code on. This made the character controls much more smoother and less like it was skating on ice. 
@@ -66,5 +66,8 @@ I learned new things such as what SmoothDamp meant as well as how to set a targe
 
 Some of the easiness of this tutorial case from reusing the Movement script from tutorial 3 for the basic movements. With my understandng of most of the terms and some reseacrh online, the script came together rather well. Though I did set the velocity to public when experimenting and unltimatly got confused when testing things out while messing with the script and public settings as the velocity numbers would move rapidsly for me into very high numbers and would affect the position numbers of both the camera and Player in the inspector menu when I would test this script out. Additionally, on the X axis, the rotation would be above 0 very slightly for some reason and I never managed to set it to 0 and I have no idea why but it is very unoticable so I left it in the end as everytime I tried to reset it, it would bounce back when I pressed enter to move on.
 
-#17/01/2025
-Moving forward to making the Prototype, I know I wil be using the scripts I have been using up until now to make it which will save me a lot of time. however, I know some of them will need to be edited in order to work.
+# 17/01/2025
+
+Moving forward to making the Prototype, I know I wil be using the scripts I have been using up until now to make it which will save me a lot of time. However, I know some of them will need to be edited in order to work.
+
+This turnt
